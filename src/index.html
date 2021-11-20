@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="modal-window">
+        <div class="wrapper">
+            <i id="close_window" class="fa fa-times-circle"></i>
+            <p id="status_form"></p>
+        </div>
+    </div>
+    <div class="skew-wrapper">
+        <form id="my-form" action="https://formspree.io/f/xyylrvle" method="POST">
+            <div class="skew-input">
+                <input type="text" placeholder="Ваш номер..." name="phone" class="phone">
+            </div>
+            <div class="skew-button">
+                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i><p>Заказать</p></button>
+            </div>
+        </form>
+        <p id="invalid_number"></p>
+    </div>
+</body>
+</html>
